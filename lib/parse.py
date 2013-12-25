@@ -11,14 +11,12 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
 import psycopg2
 import sys
 import pprint
 import re
 import json
 from lib import functions
-
 
 # Parses the information given in the text file that was saved
 # @param download_location {String} This is where we wish to save the new file downloaded from the url
@@ -108,4 +106,3 @@ def parse (download_location, host, dbname, user, password, table_name, table_ti
 			
 if __name__ == "__main__":
 	parse()
-
